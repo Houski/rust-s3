@@ -61,7 +61,7 @@ use crate::PostPolicy;
 use http::header::HeaderName;
 use http::HeaderMap;
 
-pub const CHUNK_SIZE: usize = 8_388_608; // 8 Mebibytes, min is 5 (5_242_880);
+pub const CHUNK_SIZE: usize = 104_857_600; // 100 Megabytes
 
 const DEFAULT_REQUEST_TIMEOUT: Option<Duration> = Some(Duration::from_secs(60));
 
